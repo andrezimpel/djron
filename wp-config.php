@@ -16,7 +16,6 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-print_r(getenv('ENVIRONMENT'));
 if (getenv('ENVIRONMENT') == "development") {
 	define('DB_NAME', 'djron_development');
 
