@@ -1,0 +1,39 @@
+.logo-wrapper {
+  color: $black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+  a {
+    border-bottom: 2px solid $brand-primary;
+    color: $black;
+    font-size: 60pt;
+    display: block;
+    padding: $space 0;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.navbar-djron {
+  .navbar-collapse {
+    border-bottom: 2px solid $brand-primary;
+  }
+
+  .nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    > li {
+      display: inline-block;
+      float: none;
+
+      > a {
+        color: $black;
+        font-weight: 500;
+      }
+    }
+  }
+}

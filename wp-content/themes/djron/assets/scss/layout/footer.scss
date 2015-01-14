@@ -1,0 +1,37 @@
+footer {
+  padding: $space-medium 0;
+
+  span, a {
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: $space-small;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+
+.image-bg {
+  box-shadow: inset 0 1px 2px rgba(black, 0.2);
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    background: white url("../img/bg-blur.jpg") center center no-repeat;
+    background-size: cover;
+    bottom: -$space-double;
+    content: "";
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    left: -$space-double;
+    position: absolute;
+    right: -$space-double;
+    top: -$space-double;
+    z-index: -1;
+  }
+}

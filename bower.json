@@ -1,0 +1,12 @@
+{
+  "name": "djron",
+  "version": "0.0.1",
+  "main": "wp-content/themes/djron/dist/css/design.css",
+  "dependencies": {
+    "bootstrap-sass-official": "latest",
+    "font-awesome": "latest",
+    "jquery": "latest",
+    "twitter-text": "latest",
+    "momentjs": "latest"
+  }
+}

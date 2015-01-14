@@ -1,0 +1,1022 @@
+/*
+Theme Name: Zuki
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+/* --- General Styles --- */
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+ul, ol {
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.entry-content ul,
+.entry-content ol {
+	padding-right: 50px;
+	padding-left: 0;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+#comments ul ul,
+#comments ol ol {
+	padding-right: 25px;
+	padding-left: 0;
+}
+
+/* --- Tables --- */
+
+table td {
+	padding: 10px 0 10px 10px;
+}
+
+table th {
+	padding: 10px 0 10px 10px;
+	text-align:right;
+}
+
+/* --- after / before --- */
+.rp-medium-one .entry-comments:before,
+.rp-medium-two .entry-comments:before,
+.rp-big-one .entry-comments:before,
+.rp-big-two .entry-comments:before,
+.rp-color .entry-comments:before,
+.single-post .entry-header .entry-comments:before,
+.entry-edit:before,
+#comments ul.comment-meta a.comment-edit-link:before {
+	padding: 0 0 0 2px;
+}
+
+/* --- Alignment --- */
+
+.alignright {
+	margin: 5px 0 5px 45px;
+	float: right;
+}
+
+.alignleft {
+	margin: 5px 30px 0 0;
+	float: left;
+}
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* --- Forms --- */
+
+/* --- Buttons --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.0 Links + Colors
+*/
+
+/* --- Hovers --- */
+
+/* --- More Link --- */
+
+/* --- Footer Links --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.0 Header
+/*-----------------------------------------------------------------------------------*/
+
+#site-title {
+	padding: 12px 20px 40px 0;
+	text-align: right;
+	float: right;
+}
+
+/* --- Mobile Menu --- */
+
+#mobile-menu-toggle {
+	margin: 0 0 0 20px;
+	float: left;
+}
+
+#mobile-menu-toggle:after {
+	right: 0;
+	left: 0;
+	text-align: left;
+}
+
+#mobile-menu-close:after {
+	right: 0;
+	left: auto;
+}
+
+/* --- Header Top Navigation --- */
+
+/* --- Header Search --- */
+
+.search-box #searchform input {
+	padding: 13px 9px 12px 35px;
+	text-align: left;
+}
+
+.search-box #searchform:after {
+	right: 10px;
+	left: auto;
+}
+
+/* --- Main Menu --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.1 Header Archive Menu Area
+*/
+
+.archive-menu-content {
+	text-align: right;
+}
+
+a.archive-menu-close {
+	left: 20px;
+	right: auto;
+}
+
+a.archive-menu-close:after {
+	right: 0;
+	left: auto;
+}
+
+a.archive-menu-toggle {
+	padding: 0 14px 7px 0;
+}
+
+a.archive-menu-toggle:before {
+	right: 0;
+	left: auto;
+}
+
+.archive-menu-content ul.monthly li:after,
+.archive-menu-content ul li.cat-item:after {
+	padding: 0 2px 0 0;
+}
+
+.archive-menu-content ul.monthly li a {
+	padding: 0 0 0 2px;
+}
+
+.archive-menu-content ul.authors li span {
+	float: right;
+}
+
+.archive-menu-content ul.authors li span.author-name {
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.0 Posts
+*/
+
+/* --- Post Header --- */
+
+/* --- Post Details --- */
+
+/* --- Post Meta --- */
+
+.entry-meta .entry-comments:before,
+.entry-meta .entry-edit:before,
+.comment-meta ul li.comment-edit:before,
+.entry-meta .full-size-link:before {
+	padding: 5px 0 0 2px;
+}
+
+/* --- Post Pagination --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.1 Single Posts
+*/
+
+/* --- Typography --- */
+
+.entry-content blockquote,
+#comments blockquote {
+	margin-right: 50px;
+	margin-left: auto;
+}
+
+.entry-content blockquote cite,
+#comments blockquote cite {
+	text-align: left;
+}
+
+.entry-content blockquote cite:before,
+#comments blockquote cite:before {
+	padding: 0 0 0 2px;
+}
+
+.entry-content p span.dropcap {
+	float: right;
+	padding: 2px 0 0 5px;
+}
+
+.entry-content p.pull-left {
+	text-align: left;
+}
+
+/* --- Images / Video --- */
+
+.entry-content .alignright p.wp-caption-text {
+	text-align: right;
+}
+
+.entry-content .alignleft p.wp-caption-text {
+	text-align: left;
+	margin-left: 6px;
+	margin-right: auto;
+}
+
+/* --- Image Galleries --- */
+
+.gallery .gallery-item {
+	float: right;
+}
+
+.gallery-columns-2 .gallery-item:nth-of-type(odd),
+.gallery-columns-3 .gallery-item:nth-of-type(3n+1) {
+	padding-left: 1.4%;
+	padding-right: 0;
+}
+
+.gallery-columns-2 .gallery-item:nth-of-type(even),
+.gallery-columns-3 .gallery-item:nth-of-type(3n+3) {
+	padding-right: 1.4%;
+	padding-left: 0;
+}
+
+.gallery-columns-3 .gallery-item:nth-of-type(3n+2) {
+	padding-right: 0.7%;
+	padding-left: 0.7%;
+}
+
+/* --- Author Box --- */
+
+.authorbox .author-info img.avatar {
+	float: right;
+}
+
+.authorbox p.author-description {
+	padding: 0 90px 0 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	5.2 Comments
+*/
+
+#comments h3.comments-title span a {
+	float: left;
+}
+
+/* --- Comment Content --- */
+#comments .comment-details {
+	padding: 2px 50px 0 0;
+}
+
+#comments li.pingback {
+	padding: 0 57px 0 0;
+}
+
+#comments .comment-avatar {
+	float: right;
+}
+
+/* --- Pingbacks --- */
+
+/* --- No Comments Info --- */
+
+/* Comments Reply */
+#comments #respond {
+	text-align: right;
+}
+
+#comments ol.commentlist #respond {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#respond a#cancel-comment-reply-link {
+	float:  left;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	6.0 Pagination
+*/
+
+#nav-single .nav-next {
+	text-align: left;
+}
+
+.nav-previous,
+.previous-image {
+	float:right;
+}
+
+.nav-next,
+.next-image {
+	float:left;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	7.0 Custom Front Page
+*/
+/* --- Front Page Widget Areas --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	8.0 Standard Page
+*/
+
+.site-content .page .page-note {
+	right: -270px;
+	left: auto;
+}
+
+.page.fullwidth #comments {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	9.0 Archives / Search Results / 404
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/* 10.0 Widgets
+*/
+
+.widget-area .widget_nav_menu ul ul,
+.widget-area .widget_pages ul ul,
+.widget-area .widget_categories ul ul {
+	padding: 5px 20px 0 0;
+}
+
+.widget select,
+.widget iframe {
+	margin-right: 1px;
+	margin-right: 0.1rem;
+	margin-left: auto;
+}
+
+/* --- Text Widget --- */
+
+/* --- Widget with Lists --- */
+.widget_categories ul,
+.widget_archive ul,
+.widget_pages ul,
+.widget_nav_menu ul,
+.widget_meta ul,
+.widget_recent_entries ul,
+.widget_recent_comments ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* --- Search Widget (+ default Search Form) --- */
+
+/* --- RSS Widget --- */
+
+.widget-area .widget_rss ul li span.rss-date:before {
+	padding: 0 2px 0 4px;
+}
+
+/* --- Standard Recent Posts --- */
+
+.widget_recent_entries span.post-date:before {
+	padding: 0 0 0 4px;
+}
+
+/* --- Calendar Widget --- */
+
+.widget_calendar #wp-calendar caption {
+	text-align: right;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* 10.1 Custom Zuki Widgets
+*/
+/* --- Zuki Quote Widget --- */
+
+.widget_zuki_quote cite.quote-author {
+	text-align: left;
+}
+
+.widget_zuki_quote cite.quote-author:before {
+	padding: 0 0 0 2px;
+}
+
+/* --- Zuki Social Custom Menu --- */
+
+/*-----------------------------------------------------------------------------------*/
+/* 9.2 Custom Zuki Front Page Widgets
+*/
+
+/* --- Serif Fonts --- */
+
+/* --- Zuki Recent Posts Widgets Titles --- */
+
+/* --- Zuki Recent Posts Small One --- */
+.rp-small-one {
+	border-left: 1px solid #ededed;
+	float: right;
+	border-right: none;
+}
+
+.rp-small-one .entry-thumb {
+	float: right;
+	margin: 0 0 0 6px;
+}
+
+.front-fullwidth .rp-small-one,
+.front-content .rp-small-one {
+	border-left: none;
+	border-right: none;
+}
+
+.front-fullwidth .rp-small-one:nth-of-type(5n+1) {
+	clear: right;
+}
+
+.front-fullwidth .rp-small-one:nth-of-type(5n+5) {
+	clear: left;
+	border-left: none;
+	border-right: none;
+}
+
+.front-content .rp-small-one:nth-of-type(3n+1) {
+	clear: right;
+}
+
+.front-content .rp-small-one:nth-child(3n+3) {
+	clear: left;
+	border-left: none;
+	border-right: none;
+}
+
+.front-sidebar .rp-small-one,
+.default-sidebar .rp-small-one {
+	border-left: none;
+	border-right: none;
+}
+
+/* --- Zuki Recent Posts Small Two --- */
+
+.rp-small-two p span.entry-title:after {
+	padding: 0 4px 0 0;
+}
+
+.rp-small-two span.entry-date {
+	padding-right: 4px;
+	padding-left: 0;
+}
+
+.front-sidebar .rp-small-two,
+.default-sidebar .rp-small-two {
+	border-left: none;
+	border-right: none;
+}
+
+/* --- Zuki Recent Posts Medium One --- */
+
+.front-sidebar .rp-medium-one,
+.default-sidebar .rp-medium-one {
+	border-left: none;
+	border-right: none;
+}
+
+/* --- Zuki Recent Posts Medium Two --- */
+.rp-medium-two {
+	float: right;
+}
+
+.front-sidebar .rp-medium-two:nth-of-type(odd),
+.default-sidebar .rp-medium-two:nth-of-type(odd) {
+	clear: right;
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.front-sidebar .rp-medium-two:nth-of-type(even),
+.default-sidebar .rp-medium-two:nth-of-type(even) {
+	clear: left;
+	padding-right: 5px;
+	padding-left: 0;
+}
+
+/* --- Zuki Recent Posts Big One --- */
+
+#featured-content .rp-big-one .story {
+	left: 10px;
+	right: auto;
+}
+
+/* --- Zuki Recent Posts Big Two --- */
+
+/*-----------------------------------------------------------------------------------*/
+/*	12.0 WordPress com Specific Styles
+*/
+/* --- Subscription Widget --- */
+
+.widget_blog_subscription input#subscribe-field {
+	float: right;
+	margin-left: 2%;
+	margin-right: auto;
+}
+.widget_blog_subscription input[type="submit"] {
+	float: left;
+}
+#primary .sharedaddy h3.sd-title {
+	float: right;
+}
+div.sharedaddy h3,
+#content div.sharedaddy h3,
+#main div.sharedaddy h3,
+#primary div.sharedaddy h3 {
+	float: right;
+	padding: 3px 0 0 20px;
+}
+
+.entry-content .sharedaddy .sd-content {
+	float: right;
+}
+
+.contact-form label {
+	margin-right: 5px;
+	margin-left: auto;
+}
+
+.contact-form label span {
+	margin-right: 3 !important;
+	margin-left: auto;
+}
+
+/* --- Infinite Scroll --- */
+
+#infinite-handle span:before {
+	padding: 0 0 0 5px;
+}
+
+/* --- Featured Content Slider --- */
+
+#featured-content .flex-direction-nav li a.flex-next {
+	right: 36px;
+	left: auto;
+}
+
+#featured-content .flex-direction-nav li a.flex-prev {
+	right: 0;
+	left: auto;
+}
+
+
+
+/* Minimum width of 480 pixels (smartphones landscape)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 479px) {
+.rp-color {
+	float: right;
+}
+
+.rp-color:nth-of-type(3n+1) {
+	clear: right;
+}
+
+.rp-color:nth-of-type(3n+3) {
+	clear: left;
+}
+}
+
+/* Minimum width of 767 pixels (tablets portrait)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 767px) {
+
+/* --- General --- */
+	#header-top-nav,
+	#main-wrap {
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+#site-title {
+	padding-right: 35px;
+	padding-left: 0;
+}
+
+.archive-menu-content {
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+/* --- Header --- */
+
+#site-title h2.site-description:before {
+	padding: 0 13px 0 15px;
+}
+
+#mobile-menu-toggle {
+	margin: 0 0 0 35px;
+}
+
+/* --- Header Archive Menu Area --- */
+
+.list-years,
+	.list-authors {
+	float: right;
+}
+
+/* --- Typography --- */
+
+.entry-content p.pull-right {
+	margin: 2px 0 10px 30px;
+	float: right;
+}
+
+.entry-content p.pull-left {
+	margin: 2px 30px 10px 0;
+	float: left;
+}
+
+/* --- Author Box --- */
+
+.authorbox p.author-description {
+	padding: 0 160px 0 0;
+}
+
+/* --- Comments --- */
+	#comments li.comment ul.children {
+	margin-right: 40px;
+	margin-left: auto;
+}
+
+#comments li.comment ul.children ul.children {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#commentform label {
+	float: right;
+}
+
+#commentform input#author,
+	#commentform input#email,
+	#commentform input#url {
+	float: right;
+}
+
+/* --- Custom Zuki Recent Posts Widgets --- */
+	.front-content .rp-small-one,
+	.front-fullwidth .rp-small-one {
+	border-left: 1px solid #ededed;
+	border-right: none;
+}
+
+.rp-small-two {
+	border-left: 1px solid #ededed;
+	float: right;
+	border-right: none;
+}
+
+.front-fullwidth .rp-small-two:nth-of-type(3n+1),
+	.front-content .rp-small-two:nth-of-type(3n+1) {
+	clear: right;
+	padding-left: 2.5%;
+	padding-right: 0;
+}
+
+.front-fullwidth .rp-small-two:nth-of-type(3n+2),
+	.front-content .rp-small-two:nth-of-type(3n+2) {
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+.front-fullwidth .rp-small-two:nth-of-type(3n+3),
+	.front-content .rp-small-two:nth-of-type(3n+3) {
+	border-left: none;
+	clear: left;
+	padding-right: 2.5%;
+	padding-left: 0;
+	border-right: none;
+}
+
+.rp-medium-one {
+	border-left: 1px solid #ededed;
+	float: right;
+	border-right: none;
+}
+
+.front-content .rp-medium-one:nth-of-type(4n+4) {
+	padding: 0 2.381% 0 0;
+	clear: left;
+	border-left: none;
+	border-right: none;
+}
+
+.front-content .rp-medium-one:nth-of-type(4n+1) {
+	padding: 0 0 0 2.381%;
+	clear: right;
+}
+
+.front-fullwidth .rp-medium-one .entry-thumb {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+.front-fullwidth .rp-medium-one:nth-of-type(odd) {
+	clear: right;
+	padding-left: 40px;
+	padding-right: 0;
+}
+
+.front-fullwidth .rp-medium-one:nth-of-type(even) {
+	clear: left;
+	padding-right: 40px;
+	border-left: none;
+	padding-left: 0;
+	border-right: none;
+}
+
+.front-content .rp-medium-two:nth-of-type(odd) {
+	clear: right;
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+.front-content .rp-medium-two:nth-of-type(even) {
+	clear: left;
+	padding-right: 20px;
+	padding-left: 0;
+}
+/* --- Featured Content Slider --- */
+	#featured-content .rp-big-one .story {
+	left: 20px;
+	right: auto;
+}
+}
+
+/* Minimum width of 1023 pixels (tablets landscape)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1023px) {
+
+/* --- General --- */
+	.blog #primary,
+	.attachment #primary,
+	.single-post #primary,
+	.page #primary,
+	.search-no-results #primary,
+	.archive #primary ,
+	.search-results #primary,
+	#front-content-one,
+	#front-content-two {
+	float: right;
+}
+
+#blog-sidebar,
+	#front-sidebar-one,
+	#front-sidebar-two {
+	float: left;
+}
+
+#header-top-nav,
+	#main-wrap {
+	padding-right: 91px;
+	padding-left: 91px;
+}
+
+#site-title {
+	padding-right: 91px;
+	padding-left: 0;
+}
+
+.archive-menu-content {
+	margin-right: 91px;
+	margin-left: 91px;
+}
+
+.entry-details,
+	.entry-content,
+	.entry-summary,
+	.post .entry-meta,
+	.single-post #comments,
+	.single-post #disqus_thread {
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+.attachment .entry-content {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* --- Header --- */
+	#mobile-menu-toggle {
+	margin: 0 0 0 91px;
+}
+
+/* --- Header Archive Menu Area --- */
+
+a.archive-menu-close {
+	left: 40px;
+	right: auto;
+}
+
+.list-months-cats-tags {
+	float: left;
+}
+
+/* --- Typography --- */
+	.entry-content .wide-content {
+	margin: 0 -40px 26px -160px;
+}
+
+/* --- Zuki Recent Posts Widgets + Featured Slider --- */
+	.front-fullwidth .rp-big-one .story,
+	#featured-content .rp-big-one .story {
+	left: 40px;
+	right: auto;
+}
+
+.front-fullwidth .rp-medium-two .entry-thumb {
+	float: left;
+}
+
+.front-fullwidth .rp-medium-two .story {
+	padding: 25px 0 0 35px;
+	float: right;
+}
+
+.front-fullwidth .rp-color:nth-of-type(5n+5) {
+	clear: left;
+}
+
+.front-fullwidth .rp-color:nth-of-type(5n+1) {
+	clear: right;
+}
+
+.front-fullwidth .rp-color:nth-of-type(5n+5) {
+	clear: left;
+}
+
+/* --- Footer Widget Area --- */
+	#footerwidgets-wrap .default-sidebar {
+	float: right;
+	margin-left: 2.5%;
+	margin-right: auto;
+}
+
+#footerwidgets-wrap .default-sidebar:last-of-type {
+	margin-left: 0;
+	margin-right: auto;
+}
+}
+
+/* Minimum width of 1260 pixels (laptops 13")
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1260px) {
+
+/* --- General --- */
+#blog-sidebar,
+#front-sidebar-one,
+#front-sidebar-two {
+	float: left;
+}
+#header-top-nav, #main-wrap {
+	padding: 0;
+
+}
+
+/* --- Header --- */
+
+#site-title {
+	float: right;
+	padding-right: 0;
+}
+
+#header-top-nav {
+	text-align: left;
+	padding: 21px 20px 0 75px;
+	float: left;
+}
+
+#header-top-nav ul li {
+	float: left;
+}
+
+/* --- Search Header --- */
+	#masthead .search-box {
+	left: 0;
+	right: auto;
+}
+
+.search-box a#search-toggle {
+	border-right: 1px solid #ededed;
+	left: 0;
+	right: auto;
+	border-left: none;
+}
+
+.search-box #searchform {
+	padding: 0 0 0 60px;
+}
+
+/* --- Main Menu --- */
+
+#site-nav ul ul.sub-menu,
+	#site-nav ul ul.children {
+	right: 0;
+	border-right: 1px solid transparent;
+	text-align: right;
+	left: auto;
+	border-left: none;
+}
+
+#site-nav ul.sub-menu a,
+	#site-nav ul.children a {
+	border-right: none !important;
+	border-left: none;
+}
+
+#site-nav ul ul ul.sub-menu,
+	#site-nav ul ul ul.children {
+	right: 179px;
+	left: auto;
+}
+
+#site-nav ul li:hover > ul {
+	border-right: 1px solid #191919;
+	border-left: none;
+}
+
+#site-nav ul ul ul li a {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* --- Typography --- */
+	.entry-content p.pull-right {
+	margin: 2px -40px 10px 40px;
+}
+
+.entry-content p.pull-left {
+	margin: 2px 40px 10px -40px;
+}
+
+/* --- Custom Zuki Recent Posts Widgets --- */
+
+.front-content .rp-big-one .story {
+	float: right;
+	padding: 0 40px 0 0;
+}
+
+.front-content .rp-big-one .entry-thumb {
+	float: right;
+}
+
+.front-fullwidth .rp-big-two .story {
+	padding: 20px 200px 0 0;
+}
+
+.front-content .rp-big-two .story {
+	padding: 20px 40px 0 0;
+}
+
+.front-fullwidth .rp-big-two p.summary {
+	float: right;
+}
+
+.front-fullwidth .rp-big-two .entry-footer {
+	float: right;
+	margin: 0 40px 0 0;
+}
+
+.front-fullwidth .rp-medium-two .story {
+	padding: 25px 0 0 80px;
+}
+}
+
+/* Minimum width of 1360 pixels (laptops 15")
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1360px) {
+#featured-content .flex-direction-nav li a.flex-next {
+	right: auto;
+	left: -66px;
+}
+
+#featured-content .flex-direction-nav li a.flex-prev {
+	right: -66px;
+	left: auto;
+}
+}

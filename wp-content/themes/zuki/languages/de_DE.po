@@ -1,0 +1,823 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zuki v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-07-22 18:10:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: content-page.php:20
+#: content-single.php:49
+#: content.php:41
+#@ zuki
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content-featured-post.php:15
+#: content-featured-post.php:20
+#: content-single.php:41
+#: content.php:14
+#: inc/widgets.php:53
+#: inc/widgets.php:58
+#: inc/widgets.php:142
+#: inc/widgets.php:229
+#: inc/widgets.php:234
+#: inc/widgets.php:339
+#: inc/widgets.php:344
+#: inc/widgets.php:453
+#: inc/widgets.php:458
+#: inc/widgets.php:568
+#: inc/widgets.php:573
+#: inc/widgets.php:684
+#: inc/widgets.php:692
+#, php-format
+#@ zuki
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+#: functions.php:155
+#, php-format
+#@ zuki
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: functions.php:299
+#@ zuki
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar befindet sich in Moderation."
+
+#: archive.php:89
+#: search.php:31
+#@ zuki
+msgid "Nothing Found"
+msgstr "Keine Einträge gefunden"
+
+#: inc/widgets.php:87
+#: inc/widgets.php:170
+#: inc/widgets.php:279
+#: inc/widgets.php:392
+#: inc/widgets.php:509
+#: inc/widgets.php:626
+#: inc/widgets.php:735
+#: inc/widgets.php:808
+#@ zuki
+msgid "Title:"
+msgstr "Titel:"
+
+#: functions.php:314
+#@ zuki
+msgid "<span>Pingback:</span>"
+msgstr "<span>Pingback:</span>"
+
+#: archive.php:64
+#@ zuki
+msgid "Archives"
+msgstr "Archiv"
+
+#: content-page.php:26
+#: content-single.php:25
+#: content.php:57
+#: image.php:25
+#@ zuki
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: archive.php:93
+#@ zuki
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "Es scheint als könnten wir nicht finden, wonach du suchst."
+
+#: comments.php:46
+#@ zuki
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#. translators: 1: date
+#: functions.php:287
+#, php-format
+#@ zuki
+msgid "%1$s"
+msgstr "%1$s"
+
+#: content-featured-post.php:33
+#: content-single.php:22
+#: content.php:54
+#: inc/widgets.php:246
+#: inc/widgets.php:357
+#: inc/widgets.php:473
+#: inc/widgets.php:590
+#: inc/widgets.php:702
+#@ zuki
+msgid "comment 1"
+msgstr "Kommentare 1"
+
+#: content-featured-post.php:33
+#: content-single.php:22
+#: content.php:54
+#: inc/widgets.php:246
+#: inc/widgets.php:357
+#: inc/widgets.php:473
+#: inc/widgets.php:590
+#: inc/widgets.php:702
+#@ zuki
+msgid "comments %"
+msgstr "Kommentare %"
+
+#: searchform.php:13
+#@ zuki
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suche"
+
+#: 404.php:16
+#@ zuki
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Diese Seite konnte nicht gefunden werden."
+
+#: 404.php:20
+#@ zuki
+msgid "It looks like nothing was found at this location. Maybe try another search term?"
+msgstr "Es scheint, als kann an dieser Stelle nichts gefunden werden. Vielleicht hilft die Suche mit einem anderen Suchbegriff?"
+
+#: inc/customizer.php:38
+#@ zuki
+msgid "Link Color"
+msgstr "Linkfarbe"
+
+#: inc/widgets.php:238
+#, php-format
+#@ zuki
+msgid "by <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+msgstr "von <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+
+#: content-featured-post.php:25
+#: content-single.php:33
+#: content.php:25
+#: inc/widgets.php:240
+#: inc/widgets.php:349
+#: inc/widgets.php:463
+#: inc/widgets.php:580
+#, php-format
+#@ zuki
+msgid "All posts by %s"
+msgstr "Alle Artikel von %s"
+
+#: content-single.php:22
+#: content.php:54
+#@ zuki
+msgid "Leave a comment"
+msgstr "Schreibe einen Kommentar"
+
+#: footer.php:38
+#, php-format
+#@ zuki
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: functions.php:303
+#@ zuki
+msgid "Reply"
+msgstr "Antworten"
+
+#: archive.php:19
+#, php-format
+#@ zuki
+msgid "All posts filed under: %s"
+msgstr "Alle Artikel in: %s"
+
+#: archive.php:22
+#, php-format
+#@ zuki
+msgid "All posts tagged: %s"
+msgstr "Alle Artikel mit dem Schlagwort: %s"
+
+#: archive.php:25
+#, php-format
+#@ zuki
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: archive.php:28
+#, php-format
+#@ zuki
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: archive.php:31
+#, php-format
+#@ zuki
+msgid "Month: %s"
+msgstr "Monate:  %s"
+
+#: archive.php:34
+#, php-format
+#@ zuki
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: comments.php:24
+#, php-format
+#@ zuki
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "1 Kommentare"
+msgstr[1] "%1$s Kommentare"
+
+#: comments.php:37
+#@ zuki
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+#: comments.php:38
+#@ zuki
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+#: content-archivemenu.php:45
+#@ zuki
+msgid "Filter by Month"
+msgstr "Filtern nach Monat"
+
+#: footer.php:33
+#@ zuki
+msgid "Copyright"
+msgstr "Copyright"
+
+#: footer.php:35
+#@ zuki
+msgid "Proudly powered by"
+msgstr "Proudly powered by"
+
+#: footer.php:35
+#@ zuki
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:35
+#@ zuki
+msgid "WordPress."
+msgstr "WordPress."
+
+#: functions.php:281
+#, php-format
+#@ zuki
+msgid "%s <span class=\"says\">says</span>"
+msgstr "%s <span class=\"says\">sagt</span>"
+
+#: functions.php:488
+#@ zuki
+msgid "<span>Previous Posts</span>"
+msgstr "<span>Vorherige Artikel</span>"
+
+#: functions.php:489
+#@ zuki
+msgid "<span>Next Posts</span>"
+msgstr "<span>Nächste Artikel</span>"
+
+#: functions.php:514
+#, php-format
+#@ zuki
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr "<span class=\"meta-nav\">Vorheriger Artikel</span>%title"
+
+#: functions.php:515
+#, php-format
+#@ zuki
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr "<span class=\"meta-nav\">Nächster Artikel</span>%title"
+
+#: image.php:81
+#@ zuki
+msgid "Next Image"
+msgstr "Nächstes Bild"
+
+#: image.php:82
+#@ zuki
+msgid "Previous Image"
+msgstr "Vorheriges Bild"
+
+#: inc/customizer.php:21
+#@ zuki
+msgid "Theme"
+msgstr "Theme"
+
+#: inc/widgets.php:813
+#@ zuki
+msgid "Quote Text:"
+msgstr "Zitat Text:"
+
+#: inc/widgets.php:818
+#@ zuki
+msgid "Quote Author (optional):"
+msgstr "Zitat Autor (optional):"
+
+#: search.php:16
+#, php-format
+#@ zuki
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für:  %s"
+
+#: search.php:35
+#@ zuki
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Entschuldigung, es scheint kein Suchergebnis für deine Anfrage zu geben. Bitte versuche es noch einmal mit einem alternativen Suchbegriff."
+
+#: header.php:53
+#: searchform.php:11
+#@ zuki
+msgid "Search"
+msgstr "Suche"
+
+#: searchform.php:12
+#@ zuki
+msgctxt "placeholder"
+msgid "Type to search&hellip;"
+msgstr "Suche&hellip;"
+
+#: content.php:38
+#@ zuki
+msgid "Read More"
+msgstr "Weiterlesen"
+
+#: content-archivemenu.php:52
+#@ zuki
+msgid "Filter by Categories"
+msgstr "Filtern nach Kategorie"
+
+#: archive.php:31
+#@ zuki
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:34
+#@ zuki
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:37
+#@ zuki
+msgid "Asides"
+msgstr "Kurzmitteilung"
+
+#: archive.php:40
+#@ zuki
+msgid "Galleries"
+msgstr "Bildergalerien"
+
+#: archive.php:43
+#: image.php:16
+#@ zuki
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:46
+#@ zuki
+msgid "Videos"
+msgstr "Videos"
+
+#: archive.php:49
+#@ zuki
+msgid "Quotes"
+msgstr "Zitate"
+
+#: archive.php:52
+#@ zuki
+msgid "Links"
+msgstr "Links"
+
+#: archive.php:55
+#@ zuki
+msgid "Statuses"
+msgstr "Statusmeldungen"
+
+#: archive.php:58
+#@ zuki
+msgid "Audios"
+msgstr "Audio"
+
+#: archive.php:61
+#@ zuki
+msgid "Chats"
+msgstr "Chat-Protokolle"
+
+#: content-archivemenu.php:18
+#@ zuki
+msgid "Close Contents"
+msgstr "Inhalte schliessen"
+
+#: content-archivemenu.php:21
+#@ zuki
+msgid "Years"
+msgstr "Jahre"
+
+#: content-archivemenu.php:31
+#@ zuki
+msgid "Authors"
+msgstr "Autoren"
+
+#: content-archivemenu.php:60
+#@ zuki
+msgid "Filter by Tags"
+msgstr "Filtern nach Schlagwörtern"
+
+#: content-featured-post.php:23
+#: inc/widgets.php:461
+#: inc/widgets.php:578
+#, php-format
+#@ zuki
+msgid "<span>by</span> <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+msgstr "<span>von</span> <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+
+#: content-featured-post.php:33
+#: inc/widgets.php:246
+#: inc/widgets.php:357
+#: inc/widgets.php:473
+#: inc/widgets.php:590
+#: inc/widgets.php:702
+#@ zuki
+msgid "comments 0"
+msgstr "Kommentare 0"
+
+#: content-single.php:18
+#@ zuki
+msgid "Published on "
+msgstr "Veröffentlicht am "
+
+#: content-single.php:31
+#, php-format
+#@ zuki
+msgid "written by <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+msgstr "von <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+
+#: content-single.php:57
+#@ zuki
+msgid "Filed under: "
+msgstr "Kategorie: "
+
+#: content-single.php:61
+#@ zuki
+msgid "Tagged with: "
+msgstr "Schlagwort: "
+
+#: content-single.php:67
+#@ zuki
+msgid "by "
+msgstr "von "
+
+#: content.php:23
+#: inc/widgets.php:347
+#, php-format
+#@ zuki
+msgid "Published by <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+msgstr "Veröffentlicht von <a href=\"%1$s\" title=\"%2$s\">%3$s</a>"
+
+#: footer.php:22
+#@ zuki
+msgid "Follow Us"
+msgstr "Folge uns"
+
+#: functions.php:33
+#@ zuki
+msgid "Primary menu"
+msgstr "Haupt Menü"
+
+#: functions.php:34
+#@ zuki
+msgid "Header Top menu"
+msgstr "Header Top Menü"
+
+#: functions.php:35
+#@ zuki
+msgid "Footer Social menu"
+msgstr "Footer Social Menü"
+
+#: functions.php:76
+#@ zuki
+msgctxt "Libre Baskerville: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:78
+#@ zuki
+msgctxt "Karla font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:342
+#@ zuki
+msgid "Blog - Sidebar"
+msgstr "Blog - Sidebar"
+
+#: functions.php:344
+#@ zuki
+msgid "Widgets appear in a right-aligned sidebar on the default blog and on single posts."
+msgstr "Widgets erscheinen in einer rechtsbündigen Sidebar im Standard-Blog und auf Einzel-Artikeln."
+
+#: functions.php:352
+#@ zuki
+msgid "Front Page - FullWidth Top"
+msgstr "Startseite - einspaltig oben"
+
+#: functions.php:362
+#@ zuki
+msgid "Front Page - Post Content 1"
+msgstr "Startseite - Artikelinhalt 1"
+
+#: functions.php:372
+#@ zuki
+msgid "Front Page - Sidebar 1"
+msgstr "Startseite - Sidebar 1"
+
+#: functions.php:382
+#@ zuki
+msgid "Front Page - FullWidth Center"
+msgstr "Startseite - einspaltig mittig"
+
+#: functions.php:392
+#@ zuki
+msgid "Front Page - Post Content 2"
+msgstr "Startseite - Artikelinhalt 2"
+
+#: functions.php:402
+#@ zuki
+msgid "Front Page - Sidebar 2"
+msgstr "Startseite - Sidebar 2"
+
+#: functions.php:412
+#@ zuki
+msgid "Front Page - FullWidth Bottom"
+msgstr "Startseite - einspaltig unten"
+
+#: functions.php:414
+#@ zuki
+msgid "Widgets will appear in a single-column widget area at the bottom of your Front Page above the footer."
+msgstr "Widgets werden in einem 1-spaltigen Widgetbereich ganz unten auf der Startseite und oberhalb des Footers angezeigt."
+
+#: functions.php:422
+#@ zuki
+msgid "Footer - 1"
+msgstr "Footer - 1"
+
+#: functions.php:424
+#@ zuki
+msgid "First widget area of the 5-column Footer widget area."
+msgstr "Erster Widgetbereich des 5-spaltigen Footer-Widgetbereichs."
+
+#: functions.php:432
+#@ zuki
+msgid "Footer - 2"
+msgstr "Footer - 2"
+
+#: functions.php:434
+#@ zuki
+msgid "Second widget area of the 5-column Footer widget area."
+msgstr "Zweiter Widgetbereich des 5-spaltigen Footer-Widgetbereichs."
+
+#: functions.php:442
+#@ zuki
+msgid "Footer - 3"
+msgstr "Footer - 3"
+
+#: functions.php:444
+#@ zuki
+msgid "Third widget area of the 5-column Footer widget area."
+msgstr "Dritter Widgetbereich des 5-spaltigen Footer-Widgetbereichs."
+
+#: functions.php:452
+#@ zuki
+msgid "Footer - 4"
+msgstr "Footer - 4"
+
+#: functions.php:454
+#@ zuki
+msgid "Fourth widget area of the 5-column Footer widget area."
+msgstr "Vierter Widgetbereich des 5-spaltigen Footer-Widgetbereichs."
+
+#: functions.php:462
+#@ zuki
+msgid "Footer - 5"
+msgstr "Footer - 5"
+
+#: functions.php:464
+#@ zuki
+msgid "Fifth widget area of the 5-column Footer widget area."
+msgstr "Fünfter Widgetbereich des 5-spaltigen Footer-Widgetbereichs."
+
+#: header.php:48
+#@ zuki
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:60
+#@ zuki
+msgid "Close Menu"
+msgstr "Menü schiessen"
+
+#: inc/customizer.php:49
+#@ zuki
+msgid "Zuki Recent Posts Widget Background Color"
+msgstr "Hintergrundfarbe für Zuki-Widget Neueste Artikel mit Hintergrund"
+
+#: inc/customizer.php:60
+#@ zuki
+msgid "Header Archive Background Color"
+msgstr "Hintergrundfarbe für Header-Archivbereich"
+
+#: inc/customizer.php:71
+#@ zuki
+msgid "Show Header Search"
+msgstr "Zeige die Header-Suche"
+
+#: inc/customizer.php:81
+#@ zuki
+msgid "Show Header Archive Area"
+msgstr "Zeige Header Archivbereich"
+
+#: inc/customizer.php:92
+#@ zuki
+msgid "Header Archive Title"
+msgstr "Header-Archiv Titel"
+
+#: inc/customizer.php:103
+#@ zuki
+msgid "Footer Social Menu Title"
+msgstr "Titel des Footer Social Menüs"
+
+#: inc/customizer.php:114
+#@ zuki
+msgid "Footer Credit Text"
+msgstr "Footer Credits-Text"
+
+#: inc/jetpack.php:30
+#@ zuki
+msgid "The featured content slider displays at the top of the Front Page template."
+msgstr "Der Featured Artikel-Slider wird oben auf der individuellen Startseite angezeigt."
+
+#: inc/widgets.php:19
+#@ zuki
+msgid "Small Recents Posts widget with featured images."
+msgstr "Kleine neueste Artikel mit Beitragsbildern."
+
+#: inc/widgets.php:21
+#@ zuki
+msgid "Zuki: Recent Posts (Small 1)"
+msgstr "Zuki: Neueste Artikel (Small 1)"
+
+#: inc/widgets.php:90
+#: inc/widgets.php:173
+#: inc/widgets.php:282
+#: inc/widgets.php:395
+#: inc/widgets.php:512
+#: inc/widgets.php:629
+#: inc/widgets.php:738
+#@ zuki
+msgid "Number of posts to show:"
+msgstr "Anzahl der Artikel:"
+
+#: inc/widgets.php:93
+#@ zuki
+msgid "Category slug (optional, separate multiple categories by comma):"
+msgstr "Kategorie Titelform (optional, mehrere Kategorien mit Komma teilen)"
+
+#: inc/widgets.php:111
+#@ zuki
+msgid "Small Recents Posts widget without featured images."
+msgstr "Kleine neueste Artikel mit Beitragsbildern."
+
+#: inc/widgets.php:113
+#@ zuki
+msgid "Zuki: Recent Posts (Small 2)"
+msgstr "Zuki: Neueste Artikel (Small 2)"
+
+#: inc/widgets.php:176
+#: inc/widgets.php:285
+#: inc/widgets.php:398
+#: inc/widgets.php:515
+#: inc/widgets.php:632
+#: inc/widgets.php:741
+#@ zuki
+msgid "Category slug (optional):"
+msgstr "Kategorie Titelform (optional):"
+
+#: inc/widgets.php:193
+#@ zuki
+msgid "Medium-sized Recents Posts with featured image and excerpt."
+msgstr "Neueste Artikel mittlerer Größe mit Beitragsbildern und Textauszug."
+
+#: inc/widgets.php:195
+#@ zuki
+msgid "Zuki: Recent Posts (Medium 1)"
+msgstr "Zuki: Neueste Artikel (Medium 1)"
+
+#: inc/widgets.php:304
+#@ zuki
+msgid "Medium-sized Recents Posts in a 2-column layout with featured image and excerpt."
+msgstr "Neueste Artikel mittlerer Größe in einem 2-spaltigen Layout mit Beitragsbildern und Textauszug."
+
+#: inc/widgets.php:306
+#@ zuki
+msgid "Zuki: Recent Posts ( Medium 2)"
+msgstr "Zuki: Neueste Artikel (Medium 2)"
+
+#: inc/widgets.php:419
+#@ zuki
+msgid "Zuki: Recent Posts (Big 1)"
+msgstr "Zuki: Neueste Artikel (Big 1)"
+
+#: inc/widgets.php:534
+#@ zuki
+msgid "Zuki: Recent Posts (Big 2)"
+msgstr "Zuki: Neueste Artikel (Big 2)"
+
+#: inc/widgets.php:649
+#@ zuki
+msgid "Medium-sized Recents Posts with a background color."
+msgstr "Neueste Artikel mittlerer Größe mit Hintergrundfarbe."
+
+#: inc/widgets.php:651
+#@ zuki
+msgid "Zuki: Recent Posts (Background)"
+msgstr "Zuki: Neueste Artikel (Hintergrund)"
+
+#: inc/widgets.php:762
+#@ zuki
+msgid "Zuki: Quote"
+msgstr "Zuki: Zitat"
+
+#: index.php:12
+#@ zuki
+msgid "Latest Posts"
+msgstr "Neueste Artikel"
+
+#: functions.php:354
+#@ zuki
+msgid "Widgets appear in a single-column widget area on the top of the Front Page (and above the Featured Content slider, if active)."
+msgstr "Widgets erscheinen in einem 1-spaltigen Widgetbereich ganz oben auf der Startseite (und oberhalb des Featured-Artikel Sliders, wenn dieser aktiviert ist)."
+
+#: functions.php:364
+#@ zuki
+msgid "Widgets appear left of Sidebar 1 and below the FullWidth Top widget area. This widget area is especially designed for the custom Zuki Posts by Category widgets."
+msgstr "Widgets erscheinen links des Sidebar 1 Widgetbereichs und unterhalb des Widgetbereichs einspaltig oben. Der Widgetbereich ist ausschließlich für die Zuki: Neueste Artikel Widgets vorbereitet."
+
+#: functions.php:374
+#@ zuki
+msgid "Widgets appear in a right-aligned sidebar area next to the Post Content 1 widget area."
+msgstr "Widgets erscheinen in einem rechtsbündigen Sidebarbereich neben dem Artikelinhalt 1 Widgetbereich."
+
+#: functions.php:384
+#@ zuki
+msgid "Widgets will appear in a single-column widget area below the Post Content 1 and Sidebar 1 widget areas."
+msgstr "Widgets werden in einem 1-spaltigen Widgetbereich unterhalb der Artikelinhalt 1 und Sidebar 1 Widgetbereiche angezeigt."
+
+#: functions.php:394
+#@ zuki
+msgid "Widgets appear left of Sidebar 2 and below the FullWidth Center widget area. This widget area is especially designed for the custom Zuki Posts by Category widgets."
+msgstr "Widgets erscheinen links neben der Sidebar 2 und unterhalb des Widgetbereichs einspaltig mittig. Der Widgetbereich ist ausschließlich für die Zuki: Neueste Artikel Widgets vorbereitet."
+
+#: functions.php:404
+#@ zuki
+msgid "Widgets appear in a right-aligned sidebar area next to the Post Content 2 widget area."
+msgstr "Widgets erscheinen in einem rechtsbündigen Widgetbereich neben dem Artikelinhalt 2 Widgetbereich."
+
+#: inc/widgets.php:417
+#@ zuki
+msgid "Big Recents Posts with an overlay excerpt text. Featured images must have a minimum size of 1200x800 pixel."
+msgstr "Große neueste Artikel mit einem Overlay Textauszug. Beitragsbilder (Thumbnails) müssen mindestens 1200x800 Pixel groß sein."
+
+#: inc/widgets.php:532
+#@ zuki
+msgid "Big Recents Posts with featured image and a 2-column excerpt. Featured images must have a minimum size of 1200x800 pixel."
+msgstr "Große neueste Artikel mit einem großen Beitragsbild und einem 2-spaltigen Textauszug. Beitragsbilder (Thumbnails) müssen mindestens 1200x800 Pixel groß sein."
+
+#: content-archivemenu.php:14
+#@ zuki
+msgid "Filter Contents"
+msgstr "Inhalte filtern"
+
+#: functions.php:194
+#@ default
+msgid "&hellip;"
+msgstr ""
+
+#: functions.php:201
+#@ default
+msgctxt "word count: words or characters?"
+msgid "words"
+msgstr ""
+
