@@ -19,6 +19,8 @@
 if (getenv('ENVIRONMENT') == "development") {
 	define('DB_NAME', 'djron_development');
 
+	// require("debug.php");
+
 	/** MySQL database username */
 	define('DB_USER', 'root');
 

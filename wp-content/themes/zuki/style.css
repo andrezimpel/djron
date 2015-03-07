@@ -2101,24 +2101,31 @@ font-size: 0.8125rem;
 /*-----------------------------------------------------------------------------------*/
 
 /* --- Zuki Quote Widget --- */
+.widget_zuki_tweet blockquote.quote-text
 .widget_zuki_quote blockquote.quote-text {
 	line-height: 1.4;
 	letter-spacing: -0.5px;
 	font-family: 'Libre Baskerville', Georgia, serif;
 }
+.default-sidebar .widget_zuki_tweet blockquote.quote-text,
+.front-sidebar .widget_zuki_tweet blockquote.quote-text,
 .default-sidebar .widget_zuki_quote blockquote.quote-text,
 .front-sidebar .widget_zuki_quote blockquote.quote-text {
 	font-size: 23px;
 	font-size: 1.4375rem;
 }
+.front-fullwidth .widget_zuki_tweet blockquote.quote-text,
+.front-content .widget_zuki_tweet blockquote.quote-text,
 .front-fullwidth .widget_zuki_quote blockquote.quote-text,
 .front-content .widget_zuki_quote blockquote.quote-text {
 	font-size: 28px;
 	font-size: 1.75rem;
 }
+.widget_zuki_tweet blockquote.quote-text p,
 .widget_zuki_quote blockquote.quote-text p {
 	margin-bottom: 16px;
 }
+.widget_zuki_tweet cite.quote-author,
 .widget_zuki_quote cite.quote-author {
 	display: block;
 	text-align: right;
@@ -2126,6 +2133,7 @@ font-size: 0.8125rem;
 	font-size: 0.9375rem;
 	font-style: normal;
 }
+.widget_zuki_tweet cite.quote-author:before,
 .widget_zuki_quote cite.quote-author:before {
 	content: '\2013';
 	display: inline;

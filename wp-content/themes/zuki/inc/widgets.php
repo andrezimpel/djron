@@ -225,7 +225,9 @@ if($mediumone_query->have_posts()) : ?>
       <div class="rp-medium-one-content">
          <?php if ( '' != get_the_post_thumbnail() ) : ?>
 			 <div class="entry-thumb">
-				 <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_post_thumbnail('zuki-medium-landscape'); ?></a>
+				 <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>">
+					<?php the_post_thumbnail('zuki-medium-landscape'); ?>
+				 </a>
 			</div><!-- end .entry-thumb -->
 		<?php endif; ?>
 
@@ -402,6 +404,98 @@ if($mediumtwo_query->have_posts()) : ?>
 }
 
 register_widget('zuki_recentposts_medium_two');
+
+/*-----------------------------------------------------------------------------------*/
+/* Custom Zuki Widget: Recent Posts Medium Two
+/*-----------------------------------------------------------------------------------*/
+
+class zuki_recentposts_medium_two_clean extends WP_Widget {
+
+	function zuki_recentposts_medium_two_clean() {
+		$widget_ops = array('description' => __( 'Medium-sized Recents Posts in a 2-column layout with featured image.', 'zuki') );
+
+		parent::WP_Widget(false, __('Zuki: Recent Posts ( Medium 2 clean)', 'zuki'),$widget_ops);
+	}
+
+	function widget($args, $instance) {
+		$title = $instance['title'];
+		$postnumber = $instance['postnumber'];
+		$category = apply_filters('widget_title', $instance['category']);
+
+		echo $args['before_widget']; ?>
+
+		<?php if( ! empty( $title ) )
+		echo '<div class="widget-title-wrap"><h3 class="widget-title"><span>'. esc_html($title) .'</span></h3></div>'; ?>
+
+		<?php
+		// The Query
+		$mediumtwo_query = new WP_Query(array (
+		'post_status'    => 'publish',
+		'posts_per_page' => $postnumber,
+		'category_name' => $category,
+		'ignore_sticky_posts' => 1
+		) );
+		?>
+
+		<?php
+		// The Loop
+		if($mediumtwo_query->have_posts()) : ?>
+
+		<?php while($mediumtwo_query->have_posts()) : $mediumtwo_query->the_post() ?>
+			<article class="rp-medium-two">
+				<div class="rp-medium-two-content">
+
+					<?php if ( '' != get_the_post_thumbnail() ) : ?>
+						<div class="entry-thumb">
+							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_post_thumbnail('zuki-medium-landscape'); ?></a>
+						</div><!-- end .entry-thumb -->
+					<?php endif; ?>
+
+					<div class="story">
+						<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_title(); ?></a></h3>
+					</div><!--end .story -->
+				</div><!--end .rp-medium-two-content -->
+			</article><!--end .rp-medium-two -->
+
+		<?php endwhile ?>
+
+	<?php endif ?>
+
+	<?php
+	echo $args['after_widget'];
+
+	// Reset the post globals as this query will have stomped on it
+	wp_reset_postdata();
+}
+
+function update($new_instance, $old_instance) {
+	$instance['title'] = $new_instance['title'];
+	$instance['postnumber'] = $new_instance['postnumber'];
+	$instance['category'] = $new_instance['category'];
+
+	return $new_instance;
+}
+
+function form($instance) {
+	$title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+	$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '';
+	$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
+	?>
+
+	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:','zuki'); ?></label>
+		<input type="text" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" /></p>
+
+		<p><label for="<?php echo $this->get_field_id('postnumber'); ?>"><?php _e('Number of posts to show:','zuki'); ?></label>
+			<input type="text" name="<?php echo $this->get_field_name('postnumber'); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo $this->get_field_id('postnumber'); ?>" /></p>
+
+			<p><label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Category slug (optional):','zuki'); ?></label>
+				<input type="text" name="<?php echo $this->get_field_name('category'); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo $this->get_field_id('category'); ?>" /></p>
+
+				<?php
+			}
+		}
+
+		register_widget('zuki_recentposts_medium_two_clean');
 
 
 
@@ -818,3 +912,107 @@ class zuki_quote extends WP_Widget {
 }
 
 register_widget('zuki_quote');
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Quote Widget
+/*-----------------------------------------------------------------------------------*/
+
+require_once('TwitterAPIExchange.php');
+require_once('Twitter/Autolink.php');
+
+class zuki_tweet extends WP_Widget {
+
+	function zuki_tweet() {
+		$widget_ops = array('description' => 'A big tweet.' , 'zuki');
+
+		parent::WP_Widget(false, __('Zuki: Tweet', 'zuki'),$widget_ops);
+	}
+
+	function widget($args, $instance) {
+		extract( $args );
+
+		/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+		$settings = array(
+			'oauth_access_token' => "320049245-kRHB2nhahONpwJJU3OXcr4U06CkiFif0FoomtMYS",
+			'oauth_access_token_secret' => "7vNLpr8i3Dt0g1O4z7US2qkbpiqQKyT4W5HA8HYXCKkBo",
+			'consumer_key' => "7tD1FgIFBUvRpuu1UmSpA",
+			'consumer_secret' => "BapxiqxHfoU6787YEjXSuz5z12DCPt0nTJL1o3y9M"
+		);
+
+		$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+		$getfield = '?screen_name=deejayron';
+		$requestMethod = 'GET';
+		$twitter = new TwitterAPIExchange($settings);
+		$response = $twitter->setGetfield($getfield)
+		->buildOauth($url, $requestMethod)
+		->performRequest();
+		$tweet = $response;
+		$tweet = json_decode($tweet, true);
+		$tweet_text = Twitter_Autolink::create($tweet[0]["text"])
+		->setNoFollow(false)
+		->addLinks();
+
+		$title = "Twitter";
+		$quotetext = $tweet_text;
+		$quoteauthor = $instance['quoteauthor'];
+
+		echo $before_widget; ?>
+
+		<?php if($title != '')
+		echo '<div class="widget-title-wrap"><h3 class="widget-title"><span>'. esc_html($title) .'</span></h3></div>'; ?>
+
+		<div class="quote-wrap">
+			<blockquote class="quote-text"><?php echo ( wp_kses_post(wpautop($quotetext))  ); ?>
+				<?php if($quoteauthor != '') {
+					echo '<cite class="quote-author"><a href="https://www.twitter.com/deejayron" target="_blank">@deejayron</a></cite>';
+				}
+				?>
+			</blockquote>
+		</div><!-- end .quote-wrap -->
+
+		<?php
+		echo $after_widget;
+
+		// Reset the post globals as this query will have stomped on it
+		wp_reset_postdata();
+	}
+
+	function update($new_instance, $old_instance) {
+
+		$instance['title'] = $new_instance['title'];
+		$instance['quotetext'] = $new_instance['quotetext'];
+		$instance['quoteauthor'] = $new_instance['quoteauthor'];
+
+		return $new_instance;
+	}
+
+	function form($instance) {
+		$title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+		$quotetext = isset( $instance['quotetext'] ) ? esc_attr( $instance['quotetext'] ) : '';
+		$quoteauthor = isset( $instance['quoteauthor'] ) ? esc_attr( $instance['quoteauthor'] ) : '';
+		?>
+
+		<p>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:','zuki'); ?></label>
+			<input type="text" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" />
+		</p>
+
+		<p>
+			<label for="<?php echo $this->get_field_id('quotetext'); ?>"><?php _e('Quote Text:','zuki'); ?></label>
+			<textarea name="<?php echo $this->get_field_name('quotetext'); ?>" class="widefat" rows="8" cols="12" id="<?php echo $this->get_field_id('quotetext'); ?>"><?php echo( $quotetext ); ?></textarea>
+		</p>
+
+		<p>
+			<label for="<?php echo $this->get_field_id('quoteauthor'); ?>"><?php _e('Quote Author (optional):','zuki'); ?></label>
+			<input type="text" name="<?php echo $this->get_field_name('quoteauthor'); ?>" value="<?php echo esc_attr($quoteauthor); ?>" class="widefat" id="<?php echo $this->get_field_id('quoteauthor'); ?>" />
+		</p>
+
+		<?php
+	}
+}
+
+register_widget('zuki_tweet');

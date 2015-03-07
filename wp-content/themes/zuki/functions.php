@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zuki functions and definitions
  *
@@ -61,6 +62,16 @@ function zuki_setup() {
 	add_image_size( 'zuki-medium-portrait', 420, 560, true ); // Medium Portrait thumbnails (cropped)
 	add_image_size( 'zuki-medium-landscape', 840, 560, true ); // Medium landscape thumbnails (cropped)
 	add_image_size( 'zuki-fullwidth', 1200, 800, true ); // Big thumbnails (cropped)
+
+  // This theme uses a custom image size for featured images, displayed on "standard" posts.
+  // add_image_size( 'excerpt', 250, 175, true );
+  // add_image_size( 'excerpt@2x', 500, 350, true );
+  //
+  // add_image_size( 'gallery_thumb', 172, 172, true );
+  // add_image_size( 'gallery_thumb@2x', 344, 344, true );
+
+  add_image_size( 'zuki-carousel', 1200, 675, true );
+  #add_image_size( 'carousel2x', 1360, , true );
 
 }
 add_action( 'after_setup_theme', 'zuki_setup' );
@@ -552,4 +563,3 @@ require( get_template_directory() . '/inc/widgets.php' );
 /* Grab the Zuki Custom shortcodes.
 /*-----------------------------------------------------------------------------------*/
 require( get_template_directory() . '/inc/shortcodes.php' );
-
