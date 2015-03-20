@@ -3803,41 +3803,7 @@ div.sharedaddy h3,
 
 /* Minimum width of 1260 pixels (laptops 13")
 ------------------------------------------------------------------------------------ */
-@media screen and (min-width: 1260px) {
-
-	/* --- General --- */
-	#blog-sidebar,
-	#front-sidebar-one,
-	#front-sidebar-two {
-		width: 20%;
-		float: right;
-	}
-	#main-wrap {
-		padding: 0;
-	}
-
-	/* --- Header --- */
-	#masthead {
-		padding: 30px 0 0;
-	}
-	#site-title {
-		padding: 15px 0 20px 0;
-		width: 40%;
-		float: left;
-	}
-	#header-top-nav {
-		display: block;
-		clear: none;
-		overflow: hidden;
-		text-align: right;
-		padding: 21px 75px 0 20px;
-		width: 60%;
-		float: right;
-	}
-	#header-top-nav ul li {
-		float: left;
-	}
-
+@media screen and (min-width: 980px) {
 	/* --- Header Menu (Desktop) --- */
 	#mobile-menu-toggle,
 	#mobile-menu-close {
@@ -3846,56 +3812,6 @@ div.sharedaddy h3,
 	#mobile-menu-wrap {
 		display: block !important;
 		margin-bottom: 0;
-	}
-
-	/* --- Search Header --- */
-	#masthead .search-box {
-		position: absolute;
-		top: 30px;
-		right: 0;
-	}
-	.search-box a#search-toggle {
-		display: block;
-		background: none;
-		border-left: 1px solid #ededed;
-		width: 60px;
-		height: 60px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 10000;
-	}
-	.search-box a#search-toggle span {
-		display: none;
-	}
-	.search-box a#search-toggle:after {
-		content: '\f400';
-		position: absolute;
-		top: 21px;
-		z-index: 1000;
-		display: inline-block;
-		-webkit-font-smoothing: antialiased;
-		font: normal 18px/1 'Genericons';
-		color: #191919;
-		vertical-align: top;
-		text-align: center;
-		width: 60px;
-		height: 60px;
-		padding: 0;
-	}
-	.search-box #searchform {
-		display: none;
-		position: relative;
-		padding: 0 60px 0 0;
-		width: 320px;
-		height: 60px;
-	}
-	.search-box #searchform input {
-		height: 60px;
-		padding: 13px 18px 12px;
-	}
-	.search-box #searchform:after {
-		display: none;
 	}
 
 	/* --- Main Menu --- */
@@ -3922,7 +3838,7 @@ div.sharedaddy h3,
 		display: block;
 		padding: 10px 0 0;
 		font-size: 26px;
-		font-size: 1.625rem;
+		font-size: 1.225rem;
 		line-height: 1.4;
 		border-bottom: 1px solid transparent;
 		-webkit-transition: all ease-in-out 0.2s;
@@ -4010,6 +3926,97 @@ div.sharedaddy h3,
 	#site-nav ul ul ul li a {
 		margin-left: 0;
 	}
+
+	/* --- Search Header --- */
+	#masthead .search-box {
+		position: absolute;
+		top: 30px;
+		right: 0;
+	}
+	.search-box a#search-toggle {
+		display: block;
+		background: none;
+		border-left: 1px solid #ededed;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10000;
+	}
+	.search-box a#search-toggle span {
+		display: none;
+	}
+	.search-box a#search-toggle:after {
+		content: '\f400';
+		position: absolute;
+		top: 21px;
+		z-index: 1000;
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+		font: normal 18px/1 'Genericons';
+		color: #191919;
+		vertical-align: top;
+		text-align: center;
+		width: 60px;
+		height: 60px;
+		padding: 0;
+	}
+	.search-box #searchform {
+		display: none;
+		position: relative;
+		padding: 0 60px 0 0;
+		width: 320px;
+		height: 60px;
+	}
+	.search-box #searchform input {
+		height: 60px;
+		padding: 13px 18px 12px;
+	}
+	.search-box #searchform:after {
+		display: none;
+	}
+
+	/* header topnav */
+	#header-top-nav {
+		display: block;
+		clear: none;
+		overflow: hidden;
+		text-align: right;
+		padding: 21px 75px 0 20px;
+		width: 60%;
+		float: right;
+	}
+	#header-top-nav ul li {
+		float: left;
+	}
+	#site-title {
+		padding: 15px 0 20px 0;
+		width: 40%;
+		float: left;
+	}
+	#masthead {
+		padding: 30px 0 0;
+	}
+}
+
+
+@media screen and (min-width: 1260px) {
+
+	/* --- General --- */
+	#blog-sidebar,
+	#front-sidebar-one,
+	#front-sidebar-two {
+		width: 20%;
+		float: right;
+	}
+	#main-wrap {
+		padding: 0;
+	}
+
+	/* --- Header --- */
+
+
 
 	/* --- Header Archive Menu Area --- */
 	.archive-menu-wrap {
@@ -4128,7 +4135,7 @@ div.sharedaddy h3,
 
 /* Minimum width of 1360 pixels (laptops 15")
 ------------------------------------------------------------------------------------ */
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 870px) {
 	#featured-content .flex-direction-nav li a {
 		top: 382px;
 		background: none;
@@ -4168,10 +4175,16 @@ div.sharedaddy h3,
 		display: none;
 	}
 	.entry-header,
-	.entry-header-single,
+	.entry-he	ader-single,
 	.entry-content,
 	.entry-summary {
 		margin: 0;
 		width: 100%;
 	}
+}
+
+
+
+.search-box a#search-toggle {
+	right: 10px;
 }
