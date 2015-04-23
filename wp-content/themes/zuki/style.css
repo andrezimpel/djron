@@ -3682,9 +3682,6 @@ div.sharedaddy h3,
 		padding-left: 91px;
 		padding-right: 91px;
 	}
-	#site-title {
-		padding-left: 91px;
-	}
 	.archive-menu-content {
 		margin-left: 91px;
 		margin-right: 91px;
@@ -3797,6 +3794,12 @@ div.sharedaddy h3,
 	}
 	#footerwidgets-wrap .default-sidebar:last-of-type {
 		margin-right: 0;
+	}
+}
+
+@media (min-width: 1023px) and (max-width: 1259px) {
+	#site-title {
+		padding-left: 91px !important;
 	}
 }
 
@@ -3991,7 +3994,7 @@ div.sharedaddy h3,
 		float: left;
 	}
 	#site-title {
-		padding: 15px 0 20px 0;
+		padding: 15px 0 20px 35px;
 		width: 40%;
 		float: left;
 	}

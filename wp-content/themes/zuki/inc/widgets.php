@@ -914,7 +914,7 @@ class zuki_quote extends WP_Widget {
 register_widget('zuki_quote');
 
 
-
+# CUSTOM
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1016,3 +1016,86 @@ class zuki_tweet extends WP_Widget {
 }
 
 register_widget('zuki_tweet');
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Custom Zuki Widget: Recent Dates Small
+/*-----------------------------------------------------------------------------------*/
+
+class zuki_recentdates_small extends WP_Widget {
+
+	function zuki_recentdates_small() {
+		$widget_ops = array('description' => __( 'Show Recent Dates.', 'zuki') );
+
+		parent::WP_Widget(false, __('Zuki: Recent Dates', 'zuki'),$widget_ops);
+	}
+
+	function widget($args, $instance) {
+		$title = $instance['title'];
+		$postnumber = $instance['postnumber'];
+		$category = apply_filters('widget_title', $instance['category']);
+
+		echo $args['before_widget']; ?>
+
+		<?php if( ! empty( $title ) )
+			echo '<div class="widget-title-wrap"><h3 class="widget-title"><span>'. esc_html($title) .'</span></h3></div>'; ?>
+
+<?php
+// The Query
+$smalltwo_query = new WP_Query(array (
+		'post_status'    => 'publish',
+		'posts_per_page' => $postnumber,
+		'category_name' => $category,
+		'ignore_sticky_posts' => 1
+	) );
+?>
+
+<?php
+// The Loop
+if($smalltwo_query->have_posts()) : ?>
+
+   <?php while($smalltwo_query->have_posts()) : $smalltwo_query->the_post() ?>
+    <article class="rp-small-two">
+		<p class="summary"><a href="<?php the_permalink(); ?>"><span class="entry-title"><?php the_title(); ?></span><?php echo zuki_excerpt(15); ?></a><span class="entry-date"><?php echo get_the_date(); ?></span></p>
+      </article><!--end .rp-small-two -->
+
+   <?php endwhile ?>
+
+<?php endif ?>
+
+	   <?php
+	   echo $args['after_widget'];
+
+	    // Reset the post globals as this query will have stomped on it
+	   wp_reset_postdata();
+	   }
+
+   function update($new_instance, $old_instance) {
+   		$instance['title'] = $new_instance['title'];
+   		$instance['postnumber'] = $new_instance['postnumber'];
+   		$instance['category'] = $new_instance['category'];
+
+       return $new_instance;
+   }
+
+   function form($instance) {
+   		$title = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+   		$postnumber = isset( $instance['postnumber'] ) ? esc_attr( $instance['postnumber'] ) : '';
+   		$category = isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
+   	?>
+
+	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:','zuki'); ?></label>
+		<input type="text" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($title); ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" /></p>
+
+	<p><label for="<?php echo $this->get_field_id('postnumber'); ?>"><?php _e('Number of posts to show:','zuki'); ?></label>
+		<input type="text" name="<?php echo $this->get_field_name('postnumber'); ?>" value="<?php echo esc_attr($postnumber); ?>" class="widefat" id="<?php echo $this->get_field_id('postnumber'); ?>" /></p>
+
+	<p><label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Category slug (optional):','zuki'); ?></label>
+		<input type="text" name="<?php echo $this->get_field_name('category'); ?>" value="<?php echo esc_attr($category); ?>" class="widefat" id="<?php echo $this->get_field_id('category'); ?>" /></p>
+
+	<?php
+	}
+}
+
+register_widget('zuki_recentdates_small');

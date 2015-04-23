@@ -2777,9 +2777,9 @@ msgstr "Geen Bevingdings"
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 msgstr ""
 
-#: modules/minileven/theme/pub/minileven/searchform.php:9
-#: modules/minileven/theme/pub/minileven/searchform.php:10
-#: modules/minileven/theme/pub/minileven/searchform.php:11
+#: modules/minileven/theme/pub/minileven/.php:9
+#: modules/minileven/theme/pub/minileven/.php:10
+#: modules/minileven/theme/pub/minileven/.php:11
 #: modules/omnisearch/omnisearch-core.php:156
 msgid "Search"
 msgstr "Soek"

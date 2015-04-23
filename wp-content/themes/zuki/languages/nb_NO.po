@@ -496,7 +496,7 @@ msgstr "<span class=\"meta-nav\">Neste innlegg</span>%title"
 msgid "Menu"
 msgstr "Meny"
 
-#: header.php:53 searchform.php:11
+#: header.php:53 .php:11
 msgid "Search"
 msgstr "S&oslash;k"
 
@@ -674,12 +674,12 @@ msgid ""
 msgstr ""
 "S&oslashket ga ingen treff. Pr&oslashv &aring s&oslash;ke med andre ord."
 
-#: searchform.php:12
+#: .php:12
 msgctxt "placeholder"
 msgid "Type to search&hellip;"
 msgstr "Skriv inn s&oslashkeordet"
 
-#: searchform.php:13
+#: .php:13
 msgctxt "submit button"
 msgid "Search"
 msgstr "S&oslash;k "

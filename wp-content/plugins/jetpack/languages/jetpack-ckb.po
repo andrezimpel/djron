@@ -3174,7 +3174,7 @@ msgstr "ئەرشیڤی ڕۆژانە"
 
 #: class.jetpack.php:2033 class.jetpack.php:2969
 msgid "Jetpack supercharges your self-hosted WordPress site with the awesome cloud power of WordPress.com."
-msgstr "جێتپاک ماڵپەری وۆرپرێسەکەت پڕ دەکات لە تواناکانی هەوری جوانی ماڵپەری وۆردپرێس."
+msgstr "جێ��پاک ماڵپەری وۆرپرێسەکەت پڕ دەکات لە تواناکانی هەوری جوانی ماڵپەری وۆردپرێس."
 
 #: modules/contact-form/grunion-contact-form.php:1345
 msgid "Sent by an unverified visitor to your site."
@@ -3777,9 +3777,9 @@ msgid "Do you still have the %s plugin installed?"
 msgstr "هێشتا ئەم پێوەکراوەت %s ماوە؟"
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:49
-#: modules/minileven/theme/pub/minileven/searchform.php:9
-#: modules/minileven/theme/pub/minileven/searchform.php:10
-#: modules/minileven/theme/pub/minileven/searchform.php:11
+#: modules/minileven/theme/pub/minileven/.php:9
+#: modules/minileven/theme/pub/minileven/.php:10
+#: modules/minileven/theme/pub/minileven/.php:11
 #: modules/omnisearch/omnisearch-core.php:159 views/admin/admin-page.php:74
 msgid "Search"
 msgstr "گه‌ڕان"

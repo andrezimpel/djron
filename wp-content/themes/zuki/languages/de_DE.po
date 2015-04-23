@@ -137,7 +137,7 @@ msgstr "Kommentare 1"
 msgid "comments %"
 msgstr "Kommentare %"
 
-#: searchform.php:13
+#: .php:13
 #@ zuki
 msgctxt "submit button"
 msgid "Search"
@@ -337,12 +337,12 @@ msgid "Sorry, but nothing matched your search terms. Please try again with some 
 msgstr "Entschuldigung, es scheint kein Suchergebnis für deine Anfrage zu geben. Bitte versuche es noch einmal mit einem alternativen Suchbegriff."
 
 #: header.php:53
-#: searchform.php:11
+#: .php:11
 #@ zuki
 msgid "Search"
 msgstr "Suche"
 
-#: searchform.php:12
+#: .php:12
 #@ zuki
 msgctxt "placeholder"
 msgid "Type to search&hellip;"

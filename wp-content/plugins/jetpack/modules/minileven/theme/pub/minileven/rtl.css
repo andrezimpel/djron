@@ -52,7 +52,7 @@ body {
 	margin-right: 102px;
 }
 /* Make sure the logo and search form don't collide */
-.one-column #branding #searchform {
+.one-column #branding # {
 	right: auto;
 	left: 40px;
 }
@@ -147,7 +147,7 @@ input#s {
 }
 
 /* Search Form */
-#branding #searchform {
+#branding # {
 	right: auto;
 	left: 7.6%;
 	text-align: left;

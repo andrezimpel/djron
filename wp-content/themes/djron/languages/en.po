@@ -636,15 +636,15 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: ../searchform.php:3 ../searchform.php:4
+#: ../.php:3 ../.php:4
 msgid "Search for:"
 msgstr ""
 
-#: ../searchform.php:4
+#: ../.php:4
 msgid "Search &hellip;"
 msgstr ""
 
-#: ../searchform.php:6
+#: ../.php:6
 msgid "Search"
 msgstr ""
 

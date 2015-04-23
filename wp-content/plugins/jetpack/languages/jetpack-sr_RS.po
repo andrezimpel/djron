@@ -838,7 +838,7 @@ msgstr "Детаљи грешке: %s"
 
 #: class.jetpack-client-server.php:142
 msgid "You need to register your Jetpack before connecting it."
-msgstr "Морате да региструјете свој Jetpack пре повезивања."
+msgstr "Морате да регис��рујете свој Jetpack пре повезивања."
 
 #: class.jetpack-client-server.php:137
 msgid "An administrator for this blog must set up the Jetpack connection."
@@ -978,9 +978,9 @@ msgid "View:"
 msgstr ""
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:49
-#: modules/minileven/theme/pub/minileven/searchform.php:9
-#: modules/minileven/theme/pub/minileven/searchform.php:10
-#: modules/minileven/theme/pub/minileven/searchform.php:11
+#: modules/minileven/theme/pub/minileven/.php:9
+#: modules/minileven/theme/pub/minileven/.php:10
+#: modules/minileven/theme/pub/minileven/.php:11
 #: modules/omnisearch/omnisearch-core.php:159 views/admin/admin-page.php:74
 msgid "Search"
 msgstr "Претрага"
@@ -3048,7 +3048,7 @@ msgstr ""
 
 #: modules/subscriptions.php:123
 msgid "Jetpack Subscriptions Settings"
-msgstr "Jetpack-ова подешавања пријава"
+msgstr "Jetpack-ова подешавања пр��јава"
 
 #: modules/subscriptions.php:132
 msgid "Follow Blog"
@@ -4424,7 +4424,7 @@ msgstr "Објављивање"
 
 #: modules/module-info.php:221
 msgid "Publicize allows you to connect your blog to popular social networking sites and automatically share new posts with your friends.\t You can make a connection for just yourself or for all users on your blog."
-msgstr "Обзнањивање вам омогућава да повежете свој блог са популатним веб местима за друштвено умрежавање и да аутоматски делите нове чланке са својим пријатељима.\t Можете направити везу само за себе саме или за све кориснике на вашем блогу."
+msgstr "Обзнањивање вам омогућава да повежете свој блог са популатним веб местима за друштвено умрежавање и да аутоматски делите нове чланке са својим п��ијатељима.\t Можете направити везу само за себе саме или за све кориснике на вашем блогу."
 
 #: modules/module-info.php:222
 msgid "Publicize allows you to share your posts on Facebook, Twitter, Tumblr, Yahoo!, and Linkedin."

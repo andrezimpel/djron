@@ -1005,9 +1005,9 @@ msgid "View:"
 msgstr ""
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:49
-#: modules/minileven/theme/pub/minileven/searchform.php:9
-#: modules/minileven/theme/pub/minileven/searchform.php:10
-#: modules/minileven/theme/pub/minileven/searchform.php:11
+#: modules/minileven/theme/pub/minileven/.php:9
+#: modules/minileven/theme/pub/minileven/.php:10
+#: modules/minileven/theme/pub/minileven/.php:11
 #: modules/omnisearch/omnisearch-core.php:159 views/admin/admin-page.php:79
 msgid "Search"
 msgstr "Pretraži"
@@ -4738,7 +4738,7 @@ msgstr "Šta je lebdjeća kartica? "
 
 #: modules/module-info.php:57
 msgid "Hovercards enhance plain Gravatar images with information about a person: name, bio, pictures, their contact info, and other services they use on the web like Twitter, Facebook, or LinkedIn."
-msgstr "Lebdjeće kartice poboljšavaju obične slike Gravatara sa informacijama o osobi: ime, biografija, slika, kontakt informacije i drugi servisi koje dotična osoba koristi kao što su Twitter, Facebook ili Linkedln. "
+msgstr "Lebdjeće kartice poboljšavaju obi��ne slike Gravatara sa informacijama o osobi: ime, biografija, slika, kontakt informacije i drugi servisi koje dotična osoba koristi kao što su Twitter, Facebook ili Linkedln. "
 
 #: modules/module-info.php:58
 msgid "Hovercards offer a great way to show your internet presence and help people find your own blog."

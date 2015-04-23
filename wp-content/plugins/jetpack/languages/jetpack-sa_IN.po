@@ -3765,9 +3765,9 @@ msgid "Do you still have the %s plugin installed?"
 msgstr ""
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:49
-#: modules/minileven/theme/pub/minileven/searchform.php:9
-#: modules/minileven/theme/pub/minileven/searchform.php:10
-#: modules/minileven/theme/pub/minileven/searchform.php:11
+#: modules/minileven/theme/pub/minileven/.php:9
+#: modules/minileven/theme/pub/minileven/.php:10
+#: modules/minileven/theme/pub/minileven/.php:11
 #: modules/omnisearch/omnisearch-core.php:159 views/admin/admin-page.php:74
 msgid "Search"
 msgstr ""

@@ -14,7 +14,7 @@ Changelog:
 Version 1.1.1 (07/01/2015)
 ----------------------------------------------------------------------------------------------------------------------------
 -Bug Fix: Update of slider content to delete WordPress shortcodes in excerpt text (content-featured-post.php)
--Bug Fix: Deleted double role attribute in search form  (searchform.php)
+-Bug Fix: Deleted double role attribute in search form  (.php)
 -Bug Fix: Added missing link styles to list elements (style.css, functions.php)
 - New: Theme Option to hide Featured Images on Single Posts (inc/customizer.php, content-single.php)
 - New: Support for new WordPress title tag, Important: WordPress 4.1 or higher is required (functions.php, header.php)

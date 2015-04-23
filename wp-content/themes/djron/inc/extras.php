@@ -251,7 +251,7 @@ function dw_minion_site_actions() {
       </div>
       <div class="clearfix actions">
           <div class="action search">
-              <form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="action searchform">
+              <form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="action ">
                   <input type="text" placeholder="Search" id="s" name="s" class="search-query">
                   <label for="s"></label>
               </form>

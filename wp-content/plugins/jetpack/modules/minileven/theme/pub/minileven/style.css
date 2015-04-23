@@ -866,7 +866,7 @@ and remove the padding rules below.
 /* =error404
 ----------------------------------------------- */
 
-.error404 #main #searchform {
+.error404 #main # {
 	background: #f9f9f9;
 	border: 1px solid #ddd;
 	border-width: 1px 0;
