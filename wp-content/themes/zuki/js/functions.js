@@ -51,9 +51,10 @@ jQuery(document).ready(function(){
 });
 
 // Header Search (Desktop only).
-if (document.documentElement.clientWidth > 1200) {
+if (document.documentElement.clientWidth > 980) {
 jQuery(document).ready(function(){
-		jQuery("a#search-toggle").click().toggle(function() {
+		jQuery("a#search-toggle").click().toggle(function(e) {
+      e.preventDefault;
 		jQuery('#searchform').animate({
 			width: 'show',
 			opacity: 'show'

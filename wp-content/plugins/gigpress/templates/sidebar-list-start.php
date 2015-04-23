@@ -1,5 +1,5 @@
 <?php
-	
+
 // 	STOP! DO NOT MODIFY THIS FILE!
 //	If you wish to customize the output, you can safely do so by COPYING this file
 //	into a new folder called 'gigpress-templates' in your 'wp-content' directory
