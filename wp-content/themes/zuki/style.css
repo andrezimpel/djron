@@ -3822,7 +3822,7 @@ div.sharedaddy h3,
 		overflow: visible;
 	}
 	#site-nav {
-		padding: 56px 0 80px;
+		padding: 20px 0 10px;
 	}
 	#site-nav ul  {
 			position: relative;
@@ -4190,4 +4190,12 @@ div.sharedaddy h3,
 
 .search-box a#search-toggle {
 	right: 10px;
+}
+
+
+/* custom */
+.dj-ron-id {
+	clear: both;
+	display: block;
+	margin-top: 15px;
 }

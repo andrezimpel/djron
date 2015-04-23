@@ -46,6 +46,13 @@
 
 			<a href="#menuopen" id="mobile-menu-toggle"><span><?php _e( 'Menu', 'zuki' ); ?></span></a>
 
+
+      <div style="clear: both;"></div>
+
+      <div class="dj-ron-id">
+        <img src="/wp-content/themes/zuki/img/header.jpg">
+      </div>
+
 			<div id="mobile-menu-wrap" class="cf">
 				<?php if ( get_theme_mod( 'show_headersearch' ) ) : ?>
 					<div class="search-box">

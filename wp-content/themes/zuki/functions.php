@@ -563,3 +563,32 @@ require( get_template_directory() . '/inc/widgets.php' );
 /* Grab the Zuki Custom shortcodes.
 /*-----------------------------------------------------------------------------------*/
 require( get_template_directory() . '/inc/shortcodes.php' );
+
+
+
+
+// custom
+
+add_filter('pre_link_image','pre_link_image_add_thumb');
+function pre_link_image_add_thumb($img_url){
+	echo "hihihihih";
+
+	// set our width value
+	$width = 400;
+
+        // set a height value? update it in the params line below add "&h=$height". we only are using width though.
+        // $height = 80;
+
+	// this points to our specific location for phpThumb
+	$thumb_file = "http://yourserver.com/phpThumb/phpThumb.php";
+
+	// here we specify a width and the img src recvd by this function
+	$thumb_params = "w=$width&src=$img_url";
+
+	// and now we make our "new" img url
+	$new_img_url = $thumb_file . "?" . $thumb_params;
+
+	// and now we return it!
+  return "h";
+	return $new_img_url;
+}
