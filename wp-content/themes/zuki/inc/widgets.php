@@ -344,23 +344,20 @@ if($mediumtwo_query->have_posts()) : ?>
 			<div class="story">
 				<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_title(); ?></a></h3>
 				<div class="entry-author">
-				<?php
-					printf( __( 'Published by <a href="%1$s" title="%2$s">%3$s</a>', 'zuki' ),
-					esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-					sprintf( esc_attr__( 'All posts by %s', 'zuki' ), get_the_author() ),
-					get_the_author() );
-				?>
+					<div class="entry-date"><a href="<?php the_permalink(); ?>" class="entry-date"><?php echo get_the_date(); ?></a></div>
 				</div><!-- end .entry-author -->
 				<p class="summary"><?php echo zuki_excerpt(30); ?></p>
-				<div class="entry-date"><a href="<?php the_permalink(); ?>" class="entry-date"><?php echo get_the_date(); ?></a></div>
-				<?php if ( comments_open() ) : ?>
-				<div class="entry-comments">
-					<?php comments_popup_link( '<span class="leave-reply">' . __( 'comments 0', 'zuki' ) . '</span>', __( 'comment 1', 'zuki' ), __( 'comments %', 'zuki' ) ); ?>
-				</div><!-- end .entry-comments -->
-				<?php endif; // comments_open() ?>
-				<div class="entry-cats">
-					<?php the_category(', '); ?>
-				</div><!-- end .entry-cats -->
+				<div style="display: none">
+					<div class="entry-date"><a href="<?php the_permalink(); ?>" class="entry-date"><?php echo get_the_date(); ?></a></div>
+					<?php if ( comments_open() ) : ?>
+					<div class="entry-comments">
+						<?php comments_popup_link( '<span class="leave-reply">' . __( 'comments 0', 'zuki' ) . '</span>', __( 'comment 1', 'zuki' ), __( 'comments %', 'zuki' ) ); ?>
+					</div><!-- end .entry-comments -->
+					<?php endif; // comments_open() ?>
+					<div class="entry-cats">
+						<?php the_category(', '); ?>
+					</div><!-- end .entry-cats -->
+				</div>
 			</div><!--end .story -->
 		</div><!--end .rp-medium-two-content -->
     </article><!--end .rp-medium-two -->
