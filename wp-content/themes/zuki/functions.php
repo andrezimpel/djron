@@ -573,6 +573,7 @@ require( get_template_directory() . '/inc/shortcodes.php' );
 function convert_to_relative_url($content){
   $relative = str_replace("http://djron.dev", "", $content);
   $relative = str_replace("http://www.djron.net", "", $relative);
+  $relative = str_replace("http://djron.dev.andrezimpel.com", "", $relative);
 
   return $relative;
 }
