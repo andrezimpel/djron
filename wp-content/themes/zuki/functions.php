@@ -574,6 +574,7 @@ function convert_to_relative_url($content){
   $relative = str_replace("http://djron.dev", "", $content);
   $relative = str_replace("http://www.djron.net", "", $relative);
   $relative = str_replace("http://djron.dev.andrezimpel.com", "", $relative);
+  $relative = str_replace(".andrezimpel.com", "", $relative);
 
   return $relative;
 }
