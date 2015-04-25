@@ -92,8 +92,6 @@ $table_prefix  = 'wp_';
  */
 define('WPLANG', '');
 
-define( 'WP_CONTENT_URL', '/wp-content');
-
 /**
  * For developers: WordPress debugging mode.
  *
