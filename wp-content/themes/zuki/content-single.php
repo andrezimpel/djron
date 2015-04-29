@@ -15,7 +15,7 @@
 		</div><!-- end .entry-cats -->
 
 		<div class="entry-date">
-			<?php _e('Published on ', 'zuki') ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a>
+			<?php _e('', 'zuki') ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a>
 		</div><!-- end .entry-date -->
 		<?php if ( comments_open() ) : ?>
 			<div class="entry-comments">
@@ -25,15 +25,6 @@
 		<?php edit_post_link( __( 'Edit', 'zuki' ), '<div class="entry-edit">', '</div>' ); ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-author">
-			<?php
-				printf( __( 'written by <a href="%1$s" title="%2$s">%3$s</a>', 'zuki' ),
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-				sprintf( esc_attr__( 'All posts by %s', 'zuki' ), get_the_author() ),
-				get_the_author() );
-			?>
-		</div><!-- end .entry-author -->
 	</header><!-- end .entry-header -->
 
 	<?php if ( '' != get_the_post_thumbnail() && ! post_password_required()  &&  ! get_theme_mod('hide_singlethumb') ) : ?>

@@ -197,7 +197,7 @@ msgstr "Antworten"
 #, php-format
 #@ zuki
 msgid "All posts filed under: %s"
-msgstr "Alle Artikel in: %s"
+msgstr "%s"
 
 #: archive.php:22
 #, php-format
@@ -820,4 +820,3 @@ msgstr ""
 msgctxt "word count: words or characters?"
 msgid "words"
 msgstr ""
-

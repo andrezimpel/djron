@@ -625,7 +625,7 @@ a img {
 
 #site-title {
 	margin: 0;
-	padding: 12px 0 40px 20px;
+	padding: 12px 0 0 20px;
 	text-align: left;
 	width: 70%;
 	float: left;
@@ -4198,4 +4198,19 @@ div.sharedaddy h3,
 	clear: both;
 	display: block;
 	margin-top: 15px;
+}
+@media (max-width: 979px) {
+	.dj-ron-id {
+		margin-bottom: 26px;
+	}
+}
+.widget_zuki_tweet .quote-text p {
+	word-break: break-word;
+}
+.entry-content > p > img,
+.entry-content > p > a > img {
+	min-width: 100%;
+}
+.entry-content > div > iframe {
+	margin-bottom: 26px;
 }

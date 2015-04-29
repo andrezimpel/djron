@@ -76,15 +76,17 @@ get_header(); ?>
 		</header><!-- end .archive-header -->
 
 		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div class="front-content">
+			<aside class="widget widget_zuki_recentposts_medium_two">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', get_post_format() ); ?>
+					<?php get_template_part( 'excerpt', get_post_format() ); ?>
 
-		<?php endwhile; // end of the loop. ?>
+				<?php endwhile; // end of the loop. ?>
+			</aside>
+		</div>
 
-		<?php else : ?>
-
-			<article id="post-0" class="post no-results not-found">
+		<?php else : ?><article id="post-0" class="post no-results not-found">
 				<header class="entry-header">
 					<h1 class="entry-title"><?php _e( 'Nothing Found', 'zuki' ); ?></h1>
 				</header><!-- .entry-header -->
