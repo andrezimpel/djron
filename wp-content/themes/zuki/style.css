@@ -4214,3 +4214,15 @@ div.sharedaddy h3,
 .entry-content > div > iframe {
 	margin-bottom: 26px;
 }
+
+/* letter drop */
+.entry-content > p:first-child {
+	display: none;
+}
+.entry-content > p:nth-child(2):first-letter {
+	float: left;
+	font-size: 300%;
+	line-height: 1;
+	margin-top: 3px;
+	margin-right: 10px;
+}
